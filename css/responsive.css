@@ -42,6 +42,7 @@
   }
   .card-btn {
     gap: 8px;
+     padding-top: 5px;
   }
   .purchase:hover {
     transform: none;
@@ -49,7 +50,6 @@
   }
   .card-add {
     gap: 5px;
-    padding-top: 5px;
   }
   .bi {
     padding: 1px;
@@ -70,6 +70,7 @@
     display: none;
   }
 }
+
 
 
 
