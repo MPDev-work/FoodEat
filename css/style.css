@@ -12,14 +12,17 @@ body {
   scroll-behavior: smooth;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  background-color: var(--second-tint);
 }
 :root {
-  --primary-tint: rgb(255, 215, 128);
-  --primary-base: rgb(255, 175, 0);
-  --primary-shade: rgb(150, 102, 0);
+  --primary-tint: rgb(255, 225, 221);
+  --primary-base: rgb(243, 64, 45);
+  --primary-shade: rgb(181, 32, 15);
   --gray-tint: rgb(227, 227, 227);
-  --gray-base: gray;
-  --gray-shade: rgb(37, 37, 37);
+  --gray-base: rgb(60, 63, 67);
+  --gray-shade: rgb(30, 30, 27);
+  --second-base: #f8dec5;
+  --second-tint: #fffaf5;
   --text-l: 40px;
   --text-xl: 50px;
   --text-m: 30px;
@@ -82,7 +85,7 @@ li img {
   right: 0;
   z-index: 999;
   padding-inline: 50px;
-  background-color: rgba(255, 175, 0, 0.8);
+  background-color: rgba(243, 65, 45);
   backdrop-filter: blur(50px);
 }
 .logo {
@@ -240,21 +243,22 @@ li img {
   justify-content: center;
   align-items: center;
   border-radius: var(--border-rounded-normal);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px var(--gray-tint);
   padding: 10px;
   gap: 5px;
   transition: 0.2s ease-out;
+  background-color: var(--second-tint);
 }
 .card-title {
   width: 100%;
   text-align: left;
   font-size: 22px;
   letter-spacing: 0;
-  color: green;
+  color: var(--primary-base);
 }
 .card-sub {
-  font-size: 12px;
-  color: var(--gray-base);
+  font-size: 14px;
+  color: var(--gray-shade);
 }
 .card img {
   width: 100%;
@@ -278,7 +282,7 @@ li img {
   align-items: center;
   gap: 10px;
   padding: 5px 5px;
-  background-color: #f0f0f0;
+  background-color: var(--primary-tint);
   border-radius: var(--border-rounded-full);
 }
 .quanity {
@@ -296,7 +300,8 @@ li img {
 }
 .add,
 .minus {
-  background-color: rgb(230, 230, 230);
+  background-color: var(--primary-base);
+  color: var(--second-tint);
 }
 .purchase {
   padding: 7px 12px;
@@ -308,11 +313,11 @@ li img {
 }
 .purchase:hover {
   transform: translateY(-3px);
-  box-shadow: 0 0px 5px rgb(255, 207, 124);
+  box-shadow: 0 0 5px var(--primary-base);
 }
 .card:hover {
   transform: scale(0.98);
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 .card img:hover {
   transform: scale(1.01);
