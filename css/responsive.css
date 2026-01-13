@@ -34,7 +34,7 @@
     font-size: 12px;
   }
   .card-price {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .card img:hover {
@@ -65,6 +65,7 @@
     display: none;
   }
 }
+
 
 
 
