@@ -22,6 +22,7 @@
   }
   .card:hover {
     box-shadow: 0 0px 10px rgba(199, 199, 199, 0.4);
+    transform: scale(1);
   }
   .card img {
     border-radius: 18px;
