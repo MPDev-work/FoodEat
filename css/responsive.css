@@ -52,7 +52,7 @@
   }
   .bi {
     padding: 2;
-    font-size: 14px;
+    font-size: 16px;
   }
   .purchase {
     padding: 5px 10px;
@@ -65,6 +65,7 @@
     display: none;
   }
 }
+
 
 
 
