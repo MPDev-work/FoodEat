@@ -90,7 +90,7 @@ li img {
 }
 .logo {
   font-size: var(--text-m);
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     var(--gray-tint),
     var(--primary-tint)
@@ -98,7 +98,8 @@ li img {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: var(--second-base);
 }
 
 .nav-right {
@@ -345,5 +346,6 @@ li img {
   background: none;
   color: var(--primary-base);
 }
+
 
 
