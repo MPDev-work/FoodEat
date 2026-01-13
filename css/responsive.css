@@ -1,0 +1,61 @@
+@media (max-width: 480px) {
+  .nav-bar {
+    justify-content: center;
+    align-items: center;
+  }
+  li {
+    display: none;
+  }
+  .grid-card {
+    grid-template-columns: repeat(2, 1fr);
+    padding-inline: 0;
+    column-gap: 12px;
+    row-gap: 12px;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 8px;
+  }
+  .card {
+    padding: 6px;
+    box-shadow: none;
+    box-shadow: 0 0px 10px rgba(199, 199, 199, 0.2);
+  }
+  .card:hover {
+    box-shadow: 0 0px 10px rgba(199, 199, 199, 0.4);
+  }
+  .card img {
+    border-radius: 18px;
+  }
+  .card-title {
+    font-size: 16px;
+  }
+  .card-sub {
+    font-size: 10px;
+  }
+  .card-price {
+    font-size: 14px;
+  }
+
+  .card img:hover {
+    border-radius: 20px;
+  }
+  .card-btn {
+    gap: 8px;
+  }
+  .card-add {
+    gap: 5px;
+  }
+  .bi {
+    font-size: 10px;
+  }
+  .purchase {
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  .quanity {
+    font-size: 12px;
+  }
+  .hero-sec {
+    display: none;
+  }
+}
