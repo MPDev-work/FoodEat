@@ -93,7 +93,7 @@ li img {
   background-image: linear-gradient(
     to right,
     var(--gray-tint),
-    var(--primary-shade)
+    var(--primary-tint)
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -345,4 +345,5 @@ li img {
   background: none;
   color: var(--primary-base);
 }
+
 
