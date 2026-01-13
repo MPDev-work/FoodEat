@@ -1,3 +1,36 @@
+:root {
+  --primary-tint: rgb(255, 225, 221);
+  --primary-base: rgb(243, 64, 45);
+  --primary-shade: rgb(181, 32, 15);
+  --gray-tint: rgb(227, 227, 227);
+  --gray-base: rgb(60, 63, 67);
+  --gray-shade: rgb(30, 30, 27);
+  --second-base: #f8dec5;
+  --second-tint: #fffaf5;
+  --text-l: 40px;
+  --text-xl: 50px;
+  --text-m: 30px;
+  --text-sm: 20px;
+  --text-s: 16px;
+  --text-xs: 12px;
+
+  /* btn rounded */
+  --border-rounded-full: 50px;
+  --border-rounded-tight: 12px;
+  --border-rounded-normal: 25px;
+
+  /* height */
+  --h-screen: 100vh;
+  --min-h-screen: 100vh;
+
+  /* padding for btn*/
+  --padding-btn-m: 10px 20px;
+  --padding-btn-s: 8px 16px;
+
+  /* nav height */
+  --nav-height: 60px;
+}
+
 @media (max-width: 480px) {
   .nav-bar {
     justify-content: center;
@@ -42,25 +75,26 @@
   }
   .card-btn {
     gap: 8px;
-     padding-top: 5px;
+    padding-top: 5px;
   }
   .purchase:hover {
     transform: none;
     box-shadow: none;
   }
   .card-add {
-    gap: 5px;
+    /* gap: 5px; */
+    display: none;
   }
   .bi {
     padding: 1px;
     font-size: 20px;
   }
-  .fav{
+  .map {
     padding: 2px;
     font-size: 16px;
   }
   .purchase {
-    padding: 5px 10px;
+    padding: 6px 10px;
     font-size: 12px;
   }
   .quanity {
@@ -69,18 +103,12 @@
   .hero-sec {
     display: none;
   }
+  .bag-add {
+    font-size: 17px;
+    padding: 6px 20px;
+  }
+  .bag-add:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
