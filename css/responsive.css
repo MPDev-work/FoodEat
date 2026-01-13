@@ -51,7 +51,7 @@
     gap: 5px;
   }
   .bi {
-    padding: 2;
+    padding: 0;
     font-size: 18px;
   }
   .fav{
@@ -69,6 +69,7 @@
     display: none;
   }
 }
+
 
 
 
