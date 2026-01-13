@@ -51,11 +51,11 @@
     gap: 5px;
   }
   .bi {
-    font-size: 10px;
+    font-size: 12px;
   }
   .purchase {
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: 12px;
   }
   .quanity {
     font-size: 12px;
@@ -64,6 +64,7 @@
     display: none;
   }
 }
+
 
 
 
