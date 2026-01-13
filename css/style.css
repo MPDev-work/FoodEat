@@ -90,16 +90,15 @@ li img {
 }
 .logo {
   font-size: var(--text-m);
-  /* background-image: linear-gradient(
+  background-image: linear-gradient(
     to right,
     var(--gray-tint),
-    var(--primary-tint)
+    var(--primary-base)
   );
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent; */
-  color: var(--second-base);
+  -webkit-text-fill-color: transparent;
 }
 
 .nav-right {
@@ -274,7 +273,7 @@ li img {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  gap: 15px;
+  gap: 8px;
 }
 .card-add {
   display: flex;
@@ -336,16 +335,20 @@ li img {
   color: red;
   padding-right: 16px;
 }
-.fav,
-.heart {
+.map {
   font-size: 16px;
   color: white;
   background-color: var(--primary-base);
 }
-.heart {
+.bag-add {
+  font-size: 16px;
+  padding: 8px 20px;
   background: none;
   color: var(--primary-base);
+  border: 1px solid var(--primary-base);
+  transition: 0.2s ease-out;
 }
-
-
-
+.bag-add:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 5px var(--primary-base);
+}
