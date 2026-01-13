@@ -43,6 +43,10 @@
   .card-btn {
     gap: 8px;
   }
+  .purchase:hover {
+    transform: none;
+    box-shadow: none;
+  }
   .card-add {
     gap: 5px;
   }
@@ -60,3 +64,4 @@
     display: none;
   }
 }
+
