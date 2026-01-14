@@ -49,6 +49,7 @@
     margin-inline: 8px;
   }
   .card {
+    border-radius: none; 
     padding: 6px;
     box-shadow: none;
     box-shadow: 0 0px 10px rgba(199, 199, 199, 0.2);
@@ -112,3 +113,4 @@
     box-shadow: none;
   }
 }
+
