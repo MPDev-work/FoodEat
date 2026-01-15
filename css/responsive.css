@@ -133,4 +133,8 @@
   .footer .home {
     color: var(--second-tint);
   }
+  .drink{
+    display: flex;
+  }
 }
+
