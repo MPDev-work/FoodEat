@@ -390,6 +390,7 @@ li img {
 
 .footer-child a.active {
   color: white;
+  background: transparent;
 }
 
 .footer-child .indicator {
@@ -403,4 +404,5 @@ li img {
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
+
 
