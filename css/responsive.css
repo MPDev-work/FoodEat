@@ -120,7 +120,6 @@
     position: fixed;
     display: flex;
     bottom: 10px;
-    height: 60px;
   }
   .footer a {
     height: 100%;
@@ -140,16 +139,17 @@
   .search {
     display: flex;
     height: 40px;
+    width: 70%;
   }
   .search input {
     border-radius: var(--border-rounded-tight);
   }
-  .search .bi {
+  .bi-search {
     font-size: 18px;
   }
   .nav-bar {
-    flex-direction: row;
     justify-content: center;
+    flex-direction: row;
     height: var(--nav-height);
     padding-block: 5px;
     gap: 10px;
@@ -165,4 +165,3 @@
     display: none;
   }
 }
-
