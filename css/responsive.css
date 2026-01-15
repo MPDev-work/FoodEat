@@ -120,6 +120,7 @@
     position: fixed;
     display: flex;
     bottom: 10px;
+    height: 60px;
   }
   .footer a {
     height: 100%;
@@ -165,3 +166,4 @@
     display: none;
   }
 }
+
