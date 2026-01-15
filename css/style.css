@@ -392,6 +392,10 @@ li img {
   color: white;
   background: transparent;
 }
+.footer-child a:active{
+  background: none;
+  color: white;
+}
 
 .footer-child .indicator {
   position: absolute;
@@ -404,5 +408,6 @@ li img {
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
+
 
 
