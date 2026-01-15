@@ -77,14 +77,13 @@ li img {
   height: var(--nav-height);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   position: fixed;
   left: 0;
-  top: 0px;
+  top: 0;
   right: 0;
   z-index: 999;
-  padding-inline: 50px;
   background-color: rgba(243, 65, 45);
   backdrop-filter: blur(50px);
 }
@@ -103,12 +102,12 @@ li img {
 .search {
   height: 30px;
   width: 100%;
-  min-width: 280px;
-  position: relative;
+  position: absolute;
   display: none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  left: 1 / 2;
 }
 .search input {
   height: 100%;
@@ -119,7 +118,7 @@ li img {
   padding-left: 35px;
   padding-right: 10px;
 }
-.search .bi {
+.bi-search {
   position: absolute;
   font-size: 14px;
   top: 1/2;
@@ -129,13 +128,19 @@ li img {
 }
 .bi-person-circle,
 .bi-upc-scan {
-  /* font-size: 0px; */
+  position: absolute;
   color: var(--second-tint);
   display: none;
   justify-content: center;
   align-items: center;
   border-radius: 100%;
   background-color: rgba(255, 255, 255, 0.2);
+}
+.bi-upc-scan {
+  left: 10px;
+}
+.bi-person-circle {
+  right: 10px;
 }
 .hero-responsive {
   height: max-content;
