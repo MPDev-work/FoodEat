@@ -30,7 +30,7 @@
     <nav class="nav-bar">
       <h1 class="logo">FoodEat</h1>
       <ul class="nav-right">
-        <li><a href="#">Home</a></li>
+        <li><a href="#home">Home</a></li>
         <li><a href="#">Menu</a></li>
         <li><a href="#">Dishes</a></li>
         <li><a href="#">Drink</a></li>
@@ -46,7 +46,7 @@
       <i class="bi bi-person-circle"></i>
     </nav>
     <!-- hero section for mobile -->
-    <section class="hero-responsive">
+    <section class="hero-responsive" id="home">
       <div class="product-grid">
         <div class="product product1">
           <img
@@ -67,7 +67,7 @@
           <img src="img/card_img/ChatGPT Image Jan 15, 2026, 09_43_51 PM.png" />
         </div>
       </div>
-      <div class="advertisement">
+      <div class="advertisement" id="menu">
         <h1>Advertisemnt</h1>
         <p>Swip to explore more</p>
         <div class="flex-item">
@@ -294,7 +294,7 @@
         </div>
       </div>
     </section>
-    <section class="drink">
+    <section class="drink" id="drink">
       <div class="img">
         <div class="drink-card">
           <img src="img/card_img/Modern Sushi Social Media Ads Design.jpg" />
@@ -378,9 +378,9 @@
     </section>
     <footer class="footer">
       <div class="footer-child">
-        <a href="#">Home</a>
-        <a href="#">Food</a>
-        <a href="#">Drink</a>
+        <a href="#home">Home</a>
+        <a href="#menu">Food</a>
+        <a href="#drink">Drink</a>
         <a href="#">Cake</a>
         <span class="indicator"></span>
       </div>
@@ -388,3 +388,4 @@
     <script src="js/app.js"></script>
   </body>
 </html>
+
