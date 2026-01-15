@@ -392,7 +392,7 @@ li img {
   color: white;
   background: transparent;
 }
-.footer-child a:active{
+.footer-child a:active {
   background: none;
   color: white;
 }
@@ -408,8 +408,50 @@ li img {
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 1;
 }
-
-
-
-
-
+.drink {
+  width: 100%;
+  height: auto;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.drink .img {
+  height: max-content;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 10px;
+  padding-bottom: calc(var(--nav-height) + 20px);
+  overflow-x: auto;
+  overflow-y: auto;
+}
+.drink-card {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: var(--border-rounded-normal);
+  box-shadow: 0 5px 10px var(--gray-tint);
+  padding: 5px;
+  gap: 5px;
+  transition: 0.2s ease-out;
+  background-color: white;
+}
+.drink-card img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 15px;
+  transition: 0.2s ease-out;
+  border-radius: 20px;
+}
+.drink-card .card-sub {
+  width: 100%;
+  text-align: left;
+}
