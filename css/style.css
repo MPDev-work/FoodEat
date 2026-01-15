@@ -204,7 +204,7 @@ li img {
 }
 
 .flex-item img {
-  width: 225px;
+  width: 300px;
   height: auto;
   flex-shrink: 0;
   /* padding: 10px; */
