@@ -120,6 +120,7 @@
     position: fixed;
     display: flex;
     bottom: 10px;
+    height: 60px;
   }
   .footer a {
     height: 100%;
@@ -148,6 +149,7 @@
   }
   .nav-bar {
     flex-direction: row;
+    justify-content: center;
     height: var(--nav-height);
     padding-block: 5px;
     gap: 10px;
@@ -163,3 +165,4 @@
     display: none;
   }
 }
+
