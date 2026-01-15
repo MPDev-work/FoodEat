@@ -40,9 +40,9 @@ links.forEach((link, index) => {
     e.preventDefault();
     setActive(index);
 
-  //   setTimeout(() => {
-  //   window.location.href = link.href;
-  // }, 300);
+    setTimeout(() => {
+    window.location.href = link.href;
+  }, 300);
   });
 });
 
@@ -50,5 +50,6 @@ links.forEach((link, index) => {
 window.addEventListener("resize", () => {
   moveIndicator(activeIndex);
 });
+
 
 
