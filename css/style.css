@@ -21,8 +21,8 @@ body {
   --gray-tint: rgb(227, 227, 227);
   --gray-base: rgb(60, 63, 67);
   --gray-shade: rgb(30, 30, 27);
-  --second-base: #f8dec5;
-  --second-tint: #fffaf5;
+  --second-base: #fff0e2;
+  --second-tint: #fff6f6;
   --text-l: 40px;
   --text-xl: 50px;
   --text-m: 30px;
@@ -90,7 +90,7 @@ li img {
 }
 .logo {
   font-size: var(--text-m);
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     var(--gray-tint),
     var(--primary-base)
@@ -98,7 +98,8 @@ li img {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: var(--second-base);
 }
 
 .nav-right {
@@ -247,7 +248,7 @@ li img {
   padding: 10px;
   gap: 5px;
   transition: 0.2s ease-out;
-  background-color: var(--second-tint);
+  background-color: white;
 }
 .card-title {
   width: 100%;
@@ -317,7 +318,7 @@ li img {
 }
 .card:hover {
   transform: scale(0.98);
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
 }
 .card img:hover {
   transform: scale(1.01);
@@ -351,4 +352,54 @@ li img {
 .bag-add:hover {
   transform: translateY(-3px);
   box-shadow: 0 0 5px var(--primary-base);
+}
+.footer {
+  height: var(--nav-height);
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  padding: 2px;
+  display: none;
+  border-radius: var(--border-rounded-full);
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(225, 225, 225, 0.4);
+  box-shadow: inset 0 0 20px 3px rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(3px);
+  isolation: isolate;
+}
+
+.footer-child {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.footer-child a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  line-height: calc(var(--nav-height) - 8px);
+  color: var(--primary-base);
+  font-weight: 500;
+  z-index: 2;
+  transition: color 0.25s;
+}
+
+.footer-child a.active {
+  color: white;
+}
+
+.footer-child .indicator {
+  position: absolute;
+  top: 2px;
+  bottom: 2px;
+  left: 2px;
+  width: calc(100% / 4 - 6px / 5);
+  background: var(--primary-base);
+  border-radius: var(--border-rounded-full);
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
 }
