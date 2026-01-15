@@ -180,6 +180,8 @@ li img {
   align-items: start;
   gap: 5px;
   margin-top: 15px;
+  width: 100%;
+  overflow: hidden;
 }
 .advertisement h1 {
   width: 100%;
@@ -192,16 +194,30 @@ li img {
   font-size: 10px;
   color: var(--primary-base);
 }
+
 .flex-item {
-  width: 100%;
-  height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: start;
-  align-items: start;
-  gap: 10px;
-  overflow-x: auto;
-  overflow-y: hidden;
+  justify-content: flex-start;
+  align-items: center;
+  animation: scroll 40s linear infinite;
+}
+
+.flex-item img {
+  width: 225px;
+  height: auto;
+  flex-shrink: 0;
+  /* padding: 10px; */
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 .flex-item img {
   height: 150px;
